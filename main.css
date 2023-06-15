@@ -175,3 +175,7 @@
   background: var(--secondary-def-bg-color);
   border-color: var(--def-border-color);
 }
+
+.item__button:disabled .dots {
+  fill: var(--disabled-font-color);
+}

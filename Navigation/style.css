@@ -6,7 +6,7 @@
   width: 100%;
 }
 
-.navbar-container {
+.navbar__container {
   display: flex;
   justify-content: flex-end;
   padding: 24px;
@@ -16,39 +16,39 @@
   background: var(--primary-def-bg-color);
 }
 
-.navbar-container__nav-item {
+.navbar__item {
   border-color: var(--secondary-def-bg-color);
 }
 
-.navbar-container__nav-item:hover {
+.navbar__item:hover {
   background: var(--secondary-hover-bg-color);
   color: var(--primary-def-font-color);
 }
 
-.navbar-container__nav-item:active {
+.navbar__item:active {
   background: var(--secondary-def-bg-color);
   color: var(--primary-def-font-color);
 }
 
-.navbar-container__user-button {
+.navbar__user-button {
   gap: 13px;
 }
 
-.navbar-container__user-button:hover {
+.navbar__user-button:hover {
   background: var(--primary-def-bg-color);
   border-color: var(--secondary-def-bg-color);
 }
 
-.navbar-container__user-button:active {
+.navbar__user-button:active {
   background:  var(--secondary-def-bg-color);
 }
 
-.navbar-container__user-button:active .arrow-down {
+.navbar__user-button:active .arrow-down {
   fill: var(--secondary-active-bg-color);
 }
 
 @media screen and (min-width: 1024px) {
-  .navbar-container {
+  .navbar__container {
     width: 100%;
   }
 }
