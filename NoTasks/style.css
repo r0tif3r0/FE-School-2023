@@ -1,0 +1,15 @@
+@import '/main.css';
+
+html {
+  height: 100%;
+}
+
+.body {
+  height: 100%;
+}
+
+@media screen and (min-width: 1024px) {
+  .no-tasks {
+    width: 100%;
+  }
+}

@@ -1,0 +1,48 @@
+@import '/main.css';
+
+
+.task-item {
+  height: 69px;
+}
+.task-item:hover .task-item__button {
+  display: block;
+}
+
+.task-item__intro {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.task-item__img {
+  width: 24px;
+  height: 24px;
+}
+
+.item-status {
+  padding: 0px 8px;
+  border-radius: 4px;
+  color: var(--secondary-font-color);
+  font-weight: var(--regular-font-weight);
+  font-size: var(--regular-font-size);
+  line-height: var(--regular-line-height);
+}
+
+.item-status.draft, .item-status.in-work, .item-status.testing {
+  background: var(--def-bronze-border-color);
+}
+.item-status.completed, .item-status.done, .item-status.closed, .item-status.active {
+  background: var(--primary-def-bg-color);
+}
+.item-status.deleted {
+  background: var(--def-error-border-color);
+}
+.item-status.non-active {
+  background: var(--disabled-font-color);
+}
+
+@media screen and (min-width: 1024px) {
+  .body {
+    width: 100%;
+  }
+}

@@ -1,0 +1,11 @@
+@import '/main.css';
+
+.project-item:hover .project-item__button {
+  display: block;
+}
+
+@media screen and (min-width: 1024px) {
+  .body {
+    width: 100%;
+  }
+}
