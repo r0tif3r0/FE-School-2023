@@ -1,4 +1,4 @@
-@import '/main.css';
+@import '../main.css';
 
 .project-item:hover .project-item__button {
   display: block;
