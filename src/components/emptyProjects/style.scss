@@ -1,0 +1,14 @@
+.no-projects {
+  height: 100%;
+  &__container {
+    flex-direction: column;
+    min-height: 100%;
+    gap: 10px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .no-projects {
+    width: 100%;
+  }
+}

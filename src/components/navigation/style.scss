@@ -1,0 +1,48 @@
+.navbar {
+  z-index: 2;
+	width: 100%;
+	&__container {
+		display: flex;
+		justify-content: flex-end;
+		padding: 24px;
+		gap: 24px;
+		width: 1024px;
+		height: 90px;
+		background: $primary-def-bg-color;
+	}
+	&__item {
+		border-color: $secondary-def-bg-color;
+		&:hover {
+			background: $secondary-hover-bg-color;
+			color: $primary-def-font-color;
+		}
+		&:active, &.active {
+			background: $secondary-def-bg-color;
+			color: $primary-def-font-color;
+		}
+	}
+	&__user-button {
+		gap: 13px;
+		&:hover {
+			background: $primary-def-bg-color;
+			border-color: $secondary-def-bg-color;
+		}
+		&:active, &.active {
+			background: $secondary-def-bg-color;
+			.arrow-down {
+				color: $secondary-active-bg-color;
+			}
+		}
+	}
+}
+
+.arrow-down{
+	height: 8px;
+	width: 14px;
+}
+
+@media screen and (min-width: 1024px) {
+  .navbar__container {
+    width: 100%;
+  }
+}

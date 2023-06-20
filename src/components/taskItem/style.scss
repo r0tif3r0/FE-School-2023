@@ -1,0 +1,41 @@
+.task-item {
+	height: 69px;
+	&:hover .task-item__button {
+		display: block;
+	}
+	&__intro {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	&__img {
+		width: 24px;
+		height: 24px;
+	}
+}
+.item-status {
+	padding: 0px 8px;
+	border-radius: 4px;
+	color: $secondary-font-color;
+	font-weight: $regular-font-weight;
+	font-size: $regular-font-size;
+	line-height: $regular-line-height;
+	&.draft, &.in-work, &.testing {
+		background: $def-bronze-border-color;
+	}
+	&.completed, &.done, &.closed, &.active {
+		background: $primary-def-bg-color;
+	}
+	&.deleted {
+		background: $def-error-border-color;
+	}
+	&.non-active {
+		background: $disabled-font-color;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+  .wrapper {
+    width: 100%;
+  }
+}
