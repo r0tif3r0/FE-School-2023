@@ -1,0 +1,6 @@
+.request-buttons{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 100px;
+  margin: 30px;
+}

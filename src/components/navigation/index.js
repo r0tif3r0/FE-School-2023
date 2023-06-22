@@ -3,7 +3,7 @@ import Img from '@/assets/images/user-avatar.png';
 export function createNavBar() {
   return `<nav class="navbar">
     <div class="navbar__container">
-      <button class="button navbar__item" type="button">Проекты</button>
+      <button class="button navbar__item active" type="button">Проекты</button>
       <button class="button navbar__item" type="button">Задачи</button>
       <button class="button navbar__item" type="button">Пользователи</button>
       <div class="dropdown">
